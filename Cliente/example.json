@@ -1,0 +1,85 @@
+[
+    {
+      "tipo": "INSTR_IMPRIMIR",
+      "expresionCadena": {
+        "tipo": "VAL_CADENA",
+        "valor": "hola"
+      }
+    },
+    {
+      "tipo": "INSTR_DECLARACION",
+      "identificador": "i",
+      "tipo_dato": "NUMERO"
+    },
+    {
+      "tipo": "INSTR_DECLARACION",
+      "identificador": "v",
+      "tipo_dato": "NUMERO"
+    },
+    {
+      "tipo": "INST_FOR",
+      "expresionLogica": {
+        "operandoIzq": {
+          "tipo": "VAL_IDENTIFICADOR",
+          "valor": "i"
+        },
+        "operandoDer": {
+          "tipo": "VAL_NUMERO",
+          "valor": 4
+        },
+        "tipo": "OP_MENOR_QUE"
+      },
+      "instrucciones": [
+        {
+          "tipo": "INSTR_IMPRIMIR",
+          "expresionCadena": {
+            "tipo": "VAL_IDENTIFICADOR",
+            "valor": "i"
+          }
+        },
+        {
+          "tipo": "INST_FOR",
+          "expresionLogica": {
+            "operandoIzq": {
+              "tipo": "VAL_IDENTIFICADOR",
+              "valor": "v"
+            },
+            "operandoDer": {
+              "tipo": "VAL_NUMERO",
+              "valor": 4
+            },
+            "tipo": "OP_MENOR_QUE"
+          },
+          "instrucciones": [
+            {
+              "tipo": "INSTR_IMPRIMIR",
+              "expresionCadena": {
+                "tipo": "VAL_IDENTIFICADOR",
+                "valor": "v"
+              }
+            },
+            {
+              "tipo": "INST_BREAK",
+              "instBreak": "break"
+            }
+          ],
+          "aumento": "v",
+          "variable": "v",
+          "valorVariable": {
+            "tipo": "VAL_NUMERO",
+            "valor": 0
+          }
+        },
+        {
+          "tipo": "INST_BREAK",
+          "instBreak": "break"
+        }
+      ],
+      "aumento": "i",
+      "variable": "i",
+      "valorVariable": {
+        "tipo": "VAL_NUMERO",
+        "valor": 0
+      }
+    }
+  ]

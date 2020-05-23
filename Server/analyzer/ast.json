@@ -1,0 +1,246 @@
+[
+  {
+    "tipo": "INSTR_DECLARACION",
+    "tipo_dato": "INT",
+    "identificador": {
+      "identificador": "a"
+    },
+    "expresionNumerica": {
+      "operandoIzq": {
+        "valor": 3
+      },
+      "operandoDer": {
+        "valor": 4
+      },
+      "tipo": "OP_MODULO"
+    }
+  },
+  "char",
+  {
+    "tipo": "INSTR_DECLARACION",
+    "tipo_dato": "CHAR",
+    "identificador": {
+      "identificador": "a"
+    },
+    "expresionNumerica": {
+      "tipo": "VAL_CHAR",
+      "valor": "s"
+    }
+  },
+  {
+    "tipo": "INSTR_DECLARACION",
+    "tipo_dato": "STRING",
+    "identificador": {
+      "identificador": "a"
+    },
+    "expresionNumerica": {
+      "operandoIzq": {
+        "operandoIzq": {
+          "tipo": "VAL_IDENTIFICADOR",
+          "valor": "a"
+        },
+        "operandoDer": {
+          "tipo": "VAL_IDENTIFICADOR",
+          "valor": "b"
+        },
+        "tipo": "OP_SUMA"
+      },
+      "operandoDer": {
+        "tipo": "VAL_METODO",
+        "valor": {
+          "nombre": "metodo",
+          "datos": {
+            "lista_datos": {
+              "lista_datos": {
+                "expresion": {
+                  "valor": 4
+                }
+              },
+              "expresion": {
+                "valor": 5
+              }
+            },
+            "expresion": {
+              "tipo": "VAL_CADENA",
+              "valor": "hola"
+            }
+          }
+        }
+      },
+      "tipo": "OP_SUMA"
+    }
+  },
+  {
+    "tipo": "INSTR_IMPRIMIR",
+    "expresionCadena": {
+      "tipo": "VAL_CADENA",
+      "valor": "Atentos que toca la paja grupal en 5 minutos... Corran para llegar a tiempo"
+    }
+  },
+  {
+    "tipo": "INSTR_IF",
+    "expresionLogica": {
+      "operandoIzq": {
+        "operandoIzq": {
+          "operandoIzq": {
+            "operandoIzq": {
+              "valor": 1
+            },
+            "operandoDer": {
+              "valor": 4
+            },
+            "tipo": "OP_MAYOR_QUE"
+          },
+          "operandoDer": {
+            "operandoIzq": {
+              "valor": 4
+            },
+            "operandoDer": {
+              "valor": 4
+            },
+            "tipo": "OP_MAYOR_QUE"
+          },
+          "tipo": "OP_AND"
+        },
+        "operandoDer": {
+          "operandoIzq": {
+            "valor": 4
+          },
+          "operandoDer": {
+            "valor": 5
+          },
+          "tipo": "OP_MAYOR_QUE"
+        },
+        "tipo": "OP_AND"
+      },
+      "operandoDer": {
+        "operandoIzq": {
+          "tipo": "VAL_METODO",
+          "valor": {
+            "nombre": "expresion",
+            "datos": {
+              "expresion": {
+                "tipo": "VAL_METODO"
+              }
+            }
+          }
+        },
+        "operandoDer": {
+          "valor": 4
+        },
+        "tipo": "OP_NO_IGUAL"
+      },
+      "tipo": "OP_AND"
+    },
+    "instrucciones": [
+      null
+    ]
+  },
+  {
+    "tipo": "INSTR_IMPRIMIR",
+    "expresionCadena": {
+      "tipo": "VAL_METODO",
+      "valor": {
+        "nombre": "imprimeEsto",
+        "datos": {
+          "expresion": {
+            "tipo": "VAL_CADENA",
+            "valor": "Operaciones Bichulga"
+          }
+        }
+      }
+    }
+  },
+  {
+    "tipo": "SWITCH",
+    "expresionNumerica": {
+      "tipo": "VAL_IDENTIFICADOR",
+      "valor": "leerTecla"
+    },
+    "casos": [
+      {
+        "tipo": "CASO",
+        "expresionNumerica": {
+          "tipo": "VAL_CADENA",
+          "valor": "1"
+        },
+        "instrucciones": [
+          {
+            "tipo": "INST_BREAK",
+            "instBreak": "break"
+          }
+        ]
+      },
+      {
+        "tipo": "CASO",
+        "expresionNumerica": {
+          "operandoIzq": {
+            "valor": 1
+          },
+          "operandoDer": {
+            "valor": 1
+          },
+          "tipo": "OP_SUMA"
+        },
+        "instrucciones": [
+          {
+            "tipo": "INST_BREAK",
+            "instBreak": "break"
+          }
+        ]
+      },
+      {
+        "tipo": "CASO",
+        "expresionNumerica": {
+          "tipo": "VAL_CADENA",
+          "valor": "3"
+        },
+        "instrucciones": [
+          {
+            "tipo": "INST_BREAK",
+            "instBreak": "break"
+          }
+        ]
+      },
+      {
+        "tipo": "CASO",
+        "expresionNumerica": {
+          "valor": 4
+        },
+        "instrucciones": [
+          {
+            "tipo": "INST_BREAK",
+            "instBreak": "break"
+          }
+        ]
+      },
+      {
+        "tipo": "DEFECTO",
+        "instrucciones": [
+          {
+            "tipo": "INSTR_IMPRIMIR",
+            "expresionCadena": {
+              "tipo": "VAL_CADENA",
+              "valor": "Teclee una opcion correcta prro"
+            }
+          },
+          {
+            "tipo": "LLAMADA METODO",
+            "metodo": {
+              "nombre": "menuAnidado",
+              "datos": {
+                "expresion": {
+                  "tipo": "VAL_METODO"
+                }
+              }
+            }
+          },
+          {
+            "tipo": "INST_BREAK",
+            "instBreak": "break"
+          }
+        ]
+      }
+    ]
+  }
+]

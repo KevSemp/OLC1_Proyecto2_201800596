@@ -1,0 +1,36 @@
+﻿/******************************************
+ * Ejemplo desarrollado por Erick Navarro *
+ * Blog: e-navarro.blogspot.com           *
+ * Septiembre - 2015                      *
+ ******************************************/
+
+int a = 3%4;
+int valid_g = 4
+char a = 's';
+String a = a+b+metodo(4,5,"hola");
+
+   System.out.println("Atentos que toca la paja grupal en 5 minutos... Corran para llegar a tiempo");
+
+
+   if(1>4 && 4>4 && 4>5 && expresion()!=4){
+
+
+    }
+   System.out.println(imprimeEsto("Operaciones Bichulga"));
+    
+   switch (leerTecla) {
+            case "1":
+            
+
+                break;
+            case 1+1:
+                break;
+            case "3":
+                break;
+            case 4:
+                break;
+            default:
+                System.out.println("Teclee una opcion correcta prro");
+                menuAnidado();
+                break;
+        }

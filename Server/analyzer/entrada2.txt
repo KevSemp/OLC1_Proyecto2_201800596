@@ -1,0 +1,45 @@
+/******************************************
+ * Ejemplo desarrollado por Erick Navarro *
+ * Blog: e-navarro.blogspot.com           *
+ * Septiembre - 2015                      *
+ ******************************************/
+
+int a = 3%4;
+
+int valid_g = 4;
+char a = 's';
+String a = a+b+metodo(4,5);;
+
+class miClase{
+int a =4;
+
+if(a>4){
+
+
+
+
+}else if(4>5){
+
+int a = 4;
+for (int a = 3;a<=4;a++){
+  System.out.println("hola");
+}
+
+}else{
+for (int a = 3;a<=4;a++){
+  System.out.println("hola");
+}
+
+}
+
+void miMetodoAFD(int a,int v,int variable){
+   int a = 4;
+
+}
+
+}
+
+
+
+
+
